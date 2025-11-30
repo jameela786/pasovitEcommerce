@@ -1,0 +1,31 @@
+.checkout-layout {
+    display: grid;
+    grid-template-columns: 1fr 300px;
+    gap: 30px;
+    margin-top: 20px;
+  }
+  
+  .checkout-form {
+    background: white;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  }
+  
+  .checkout-form button {
+    width: 100%;
+    background-color: #28a745;
+    color: white;
+    font-weight: bold;
+    padding: 15px;
+    font-size: 16px;
+    margin-top: 20px;
+  }
+  
+  .checkout-summary {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    height: fit-content;
+  }

@@ -1,0 +1,75 @@
+.navbar {
+    background-color: #003366;
+    color: white;
+    padding: 15px 0;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+  }
+  
+  .navbar-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .navbar-brand {
+    font-size: 24px;
+    font-weight: bold;
+    color: white;
+  }
+  
+  .navbar-center {
+    flex: 1;
+    text-align: center;
+  }
+  
+  .navbar-center a {
+    color: white;
+    margin: 0 20px;
+    font-weight: 500;
+    transition: color 0.3s;
+  }
+  
+  .navbar-center a:hover {
+    color: #ffcc00;
+    text-decoration: none;
+  }
+  
+  .navbar-right {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+  }
+  
+  .cart-link {
+    color: white;
+    font-weight: bold;
+    transition: color 0.3s;
+  }
+  
+  .cart-link:hover {
+    color: #ffcc00;
+    text-decoration: none;
+  }
+  
+  .user-name {
+    color: #ffcc00;
+    font-weight: bold;
+  }
+  
+  .logout-btn {
+    background-color: #dc3545;
+    color: white;
+    padding: 8px 16px;
+    border-radius: 5px;
+  }
+  
+  .logout-btn:hover {
+    background-color: #c82333;
+  }
+  
