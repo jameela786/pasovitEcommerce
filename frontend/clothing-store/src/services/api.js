@@ -1,7 +1,7 @@
 import axios from 'axios';
 
 const API = axios.create({
-  baseURL: 'https://pasovitecommerce.onrender.com/' || 'https://clothing-ecommerce-backend.onrender.com/api',
+  baseURL: 'https://pasovitecommerce.onrender.com/api' || 'https://clothing-ecommerce-backend.onrender.com/api',
   withCredentials: true,
   headers: {
     'Content-Type': 'application/json'
