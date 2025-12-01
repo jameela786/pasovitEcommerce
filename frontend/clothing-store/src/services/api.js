@@ -7,8 +7,8 @@ const API = axios.create({
 
 
 
-  baseURL: 'http://localhost:5000/api',
-  // baseURL: 'https://pasovitecommerce.onrender.com/api/',
+  // baseURL: 'http://localhost:5000/api',
+  baseURL: 'https://pasovitecommerce-1.onrender.com/api',
 
   withCredentials: true,
   headers: {
