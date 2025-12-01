@@ -32,10 +32,11 @@ function Cart() {
   return (
     <div className="cart-container">
       <h1>Shopping Cart ({items.length} items)</h1>
-
+      {console.log("items of cart:",items)}
       <div className="cart-layout">
         <div className="cart-items">
           {items.map(item => (
+            
             <div key={`${item.product}-${item.size}`} className="cart-item">
               <div className="item-info">
                 <h3>{item.name}</h3>

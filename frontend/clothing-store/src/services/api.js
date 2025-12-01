@@ -1,13 +1,22 @@
 import axios from 'axios';
 
+
+
+
 const API = axios.create({
-  baseURL: 'https://pasovitecommerce.onrender.com/api/',
+
+
+
+  baseURL: 'http://localhost:5000/api',
+  // baseURL: 'https://pasovitecommerce.onrender.com/api/',
+
   withCredentials: true,
   headers: {
     'Content-Type': 'application/json'
   }
 });
 
+API.defaults.withCredentials = true;
 // Auth APIs
 export const authAPI = {
   register: (data) => API.post('/auth/register', data),

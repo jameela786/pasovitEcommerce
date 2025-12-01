@@ -25,8 +25,10 @@ export const AuthProvider = ({ children }) => {
 
   const register = useCallback(async (name, email, password, confirmPassword) => {
     try {
+     
       setError(null);
       const response = await authAPI.register({ name, email, password, confirmPassword });
+    
       setUser(response.data.user);
       return response.data;
     } catch (err) {

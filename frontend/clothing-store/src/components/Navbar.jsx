@@ -6,10 +6,11 @@ import '../styles/Navbar.css';
 
 function Navbar() {
   const { user, logout, isAuthenticated } = useContext(AuthContext);
-  const { getCartCount } = useContext(CartContext);
+  const { getCartCount ,clearCart} = useContext(CartContext);
   const navigate = useNavigate();
 
   const handleLogout = async () => {
+    // await clearCart();
     await logout();
     navigate('/');
   };
