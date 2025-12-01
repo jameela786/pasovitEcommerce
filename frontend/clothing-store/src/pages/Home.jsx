@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import { productAPI } from '../services/api';
 import ProductCard from '../components/ProductCard';
+import {seedDataProducts} from '../../seedData'
 import '../styles/Home.css';
 
 function Home() {
@@ -11,9 +12,10 @@ function Home() {
   useEffect(() => {
     const fetchProducts = async () => {
       try {
-        const response = await axios.get('https://pasovitecommerce-1.onrender.com/api/products');
-        // const response = await productAPI.getAll({ limit: 8, page: 1 });
-        setFeaturedProducts(response.data.products);
+        
+        const response = await productAPI.getAll({ limit: 8, page: 1 });
+        // setFeaturedProducts(response.data.products);
+        setFeaturedProducts(seedDataProducts)
       } catch (err) {
         console.error('Error fetching products:', err);
       } finally {
