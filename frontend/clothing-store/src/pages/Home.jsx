@@ -11,7 +11,8 @@ function Home() {
   useEffect(() => {
     const fetchProducts = async () => {
       try {
-        const response = await productAPI.getAll({ limit: 8, page: 1 });
+        const response = await axios.get('https://pasovitecommerce-1.onrender.com/api/products');
+        // const response = await productAPI.getAll({ limit: 8, page: 1 });
         setFeaturedProducts(response.data.products);
       } catch (err) {
         console.error('Error fetching products:', err);
