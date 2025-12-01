@@ -1,4 +1,7 @@
+** DO "npm run seed" in terminal to seed data first.
+
 #### MongoDB Atlas URI
+
 
 **Get your MongoDB connection string:**
 
