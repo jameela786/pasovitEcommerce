@@ -7,6 +7,7 @@ const Product = require('../models/Product');
 // Add item to cart
 exports.addToCart = async (req, res) => {
   try {
+    console.log("cart controller add to cart------")
     const { productId, size, quantity } = req.body;
     const userId = req.user.id;
 
