@@ -12,7 +12,10 @@ app.use(express.urlencoded({ extended: true }));
 app.use(cookieParser());
 
 app.use(cors({
-  origin: '*',
+  origin: [
+    "http://localhost:5173",
+    "https://pasovit-ecommerce-54f85lmqy-jameela-s-projects.vercel.app",
+  ],
   credentials: true,
   methods: ['GET', 'POST', 'PUT', 'DELETE', 'OPTIONS'],
   allowedHeaders: ['Content-Type', 'Authorization']
